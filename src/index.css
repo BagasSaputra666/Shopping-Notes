@@ -10,7 +10,7 @@
   --fontLg: calc(15px + 1rem);
 
   --paddingSm: calc(5px + .5rem);
-  --paddingDef: calc(10px + 1rem);
+  --paddingDef: calc(12px + 1rem);
   --paddingLg: calc(20px + 2rem);
 }
 
@@ -130,7 +130,6 @@ button:active {
   align-items: center;
   /* gap: 2rem; */
   margin-bottom: calc(10px + 1rem);
-  font-size: calc(10px + .5rem);
 }
 
 .list input[type='checkbox'] {
@@ -215,9 +214,25 @@ footer a {
     width: 90%;
   }
 
+  .list li {
+    font-size: var(--fontDef);
+  }
+
+  .list input[type='checkbox'] {
+    height: var(--paddingDef);
+    width: var(--paddingDef);
+  }
+
+  .list li button {
+    font-size: var(--fontDef);
+    height: var(--paddingDef);
+    width: var(--paddingDef);
+  }
+
+
   .actions button,
   .actions select {
-    font-size: calc(10px + .5rem);
+    font-size: calc(12px + .5rem);
   }
 
   .stats {
@@ -236,10 +251,17 @@ footer a {
   }
 
   .form-add-list-groceries {
+    padding: 10px 0;
     flex: 1 1 auto;
     display: flex;
     gap: 5px;
     width: 100%;
+  }
+
+  .form-add-list-groceries select,
+  .form-add-list-groceries input {
+    padding: 5px 3px;
+    width: fit-content;
   }
 
 }
